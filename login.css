@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.template {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* 
+code for login template  
+*/
+
+.login-template {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.9fr 2fr;
+}
+
+/* 
+    end cod for login template
+*/
+
+/* 
+    code for img left
+*/
+
+.login-template .img-left {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.img-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* 
+    end code for img left
+*/
+
+/* 
+    code for form login
+*/
+
+.login-template .form-login {
+  display: grid;
+  place-items: center;
+}
+
+.form-login .form-action {
+  position: relative;
+  width: 80%;
+  /* padding: 1em; */
+}
+.form-action .h-judul {
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.form-action .btn-aksi {
+  text-transform: capitalize;
+  text-align: center;
+  width: 100%;
+  margin-top: 1em;
+}
+
+/* 
+      end code for form login
+  */
+
+/* 
+    media for < 1000px
+*/
+
+@media only screen and (max-width: 1000px) {
+  .login-template {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .login-template .img-left {
+    position: absolute;
+  }
+  .img-left img {
+    object-position: initial;
+  }
+
+  /* 
+    Code for form ACTION
+  */
+
+  .h-judul {
+    color: #fff;
+  }
+  .form-action label {
+    color: #fff;
+  }
+  /* 
+    END Code for form ACTION
+  */
+}
+
+/* 
+    end media for < 1000px
+*/
+
+/* 
+     media for < 400px
+*/
+@media only screen and (max-width: 400px) {
+  /* 
+    code for form action
+  */
+
+  .form-login .form-action {
+    width: 90%;
+  }
+
+  /* end code for end action
+   */
+}
+
+/* 
+    end media for < 400px
+    
+*/
+
+/* 
+     media for > 2000px
+*/
+@media only screen and (min-width: 2500px) {
+  .login-template {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 0.9fr 2fr;
+  }
+  .form-login .form-action {
+    max-width: 850px;
+  }
+}
+
+/* 
+    end media for > 2000px
+*/
